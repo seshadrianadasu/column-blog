@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparentwhite-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: "Lexend Deca","sans-serif";
+    color: var(--Transparentwhite-paragraphs);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    min-height: 100vh;
+}
+.container {
+    display: flex; 
+}
+.container section{
+    padding: 1rem;
+    width: 17.9rem;
+}
+.container .sedan{
+    background:var(--Bright-orange);
+    padding: 2.25rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem; 
+}
+.container .suvs{
+    background: var(--Dark-cyan);
+    padding: 2.25rem; 
+}
+.container .luxuary{
+    background: var(--Very-dark-cyan);
+    padding: 2.25rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem; 
+}
+.container .car-name{
+    padding: 1.25rem 0;
+    font-family: "Big shoulders Display","sans-serif";
+    font-weight: 700;
+}
+.container p{
+    font-family: "Lexend Deca","sans-serif";
+    color: var(--Transparentwhite-paragraphs);
+    padding: 0.25rem 0;
+    line-height: 1.5; 
+    font-weight: 400;
+}
+.container .learnmore{
+    font-family: "Lexend Deca","Sans-serif";
+    font-weight: 400;
+    border-radius: 11.5rem;
+    width: 65%;
+    height:13%;
+    margin: 4.25rem 0rem 2.25rem;
+    border-color:var(--Very-light-gray-background-headings-buttons);
+}
+.container .sedan .learnmore{
+    color: var(--Bright-orange);
+}
+.container .suvs .learnmore{
+    color: var(--Dark-cyan);
+}
+.container .luxuary .learnmore{
+    color: var(--Very-dark-cyan);
+}
+.container .learnmore:hover{
+    background: transparent;
+    color:var(--Transparentwhite-paragraphs);
+    cursor: pointer; 
+}
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .sedan{
+        border-radius: 0.5rem 0.5rem 0rem 0rem; 
+    }
+    .container .luxuary{
+        border-radius: 0rem 0rem 0.5rem 0.5rem; 
+    }
+    .container .car-name{
+        font-size: 1.3rem;
+    }
+    .container .learnmore{
+        width: 10rem;
+        height: 3rem;
+        padding: 0;
+        margin: 0.5rem;
+    }
+
+    
+}
